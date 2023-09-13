@@ -1,0 +1,93 @@
+/* Mobile and Tablet */
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+    /* để cho nút cao lên 47px cho dễ bấm */
+    .contact-form .form-controll {
+        padding: 15px;
+    }
+    .contact-info {
+        line-height: 2;
+    }
+    .social-list {
+        font-size: 48px;
+    }
+    .social-list a {
+        margin: 0 8px;
+    }
+    #footer .copyright {
+        padding: 12px 0;
+        display: inline-block;
+        /* có dòng này thì nó mới padding lùi xuống đc */
+    }
+    #content .content-section {
+        width: 100%;
+    }
+
+
+}
+/* Mobile */
+@media (max-width: 46.1875em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important
+    }
+
+    #nav {
+        display: block;
+    } 
+
+    #nav > li {
+        display: block;
+    }
+    /* li:first-child là chỉ lấy thẻ li là con của ul
+     đầu tiên, phải cho thành inline-block để bấm 
+     vào 
+     */
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    /* bỏ position: absolute của subnav đi để nó hiện
+    ra, không cần ẩn đi như ở PC */
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    /* để cho chữ của thẻ a màu trắng */
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px ;
+        /* để cách ra 1 khoảng so với more cho giống subnav */
+    }
+
+    /* padding để thao tác tay cho dễ */
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+}
